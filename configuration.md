@@ -34,3 +34,23 @@
 
 - `sudo nano /etc/default/grub` set timeout to 0
 - `grub-mkconfig -o /boot/grub/grub.cfg`
+
+# Necessary setups
+
+## yay
+
+- `cd ~/Public`
+- `git clone https://aur.archlinux.org/yay.git`
+- `cd yay`
+- `makepkg -si`
+
+## Fonts
+
+- `sudo pacman -S noto-fonts noto-fonts-cjk noto-fonts-extra noto-fonts-emoji ttf-dejavu ttf-liberation`
+- `sudo nano /etc/locale.gen`
+- Uncomment `zh_CN.UTF-8 UTF-8`
+- `sudo locale-gen`
+- `sudo pacman -S nerd-fonts`
+
+# Services
+
